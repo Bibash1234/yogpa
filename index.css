@@ -228,13 +228,54 @@ nav {
 }
 
 .boxes {
-  margin: 40px 0;
+  width: 90%;
+  margin: 8rem auto;
 }
 
 .box {
   background: #191c21;
 
   color: white;
+
+  position: relative;
+
+  /* margin: 10px; */
+}
+
+.box:nth-child(1):after {
+  content: "";
+
+  position: absolute;
+
+  top: -6%;
+
+  left: -4%;
+
+  width: 80%;
+
+  height: 80%;
+
+  background: #bda555;
+
+  z-index: -1;
+}
+
+.box:nth-child(3):after {
+  content: "";
+
+  position: absolute;
+
+  bottom: -6%;
+
+  right: -4%;
+
+  width: 80%;
+
+  height: 80%;
+
+  background: #bda555;
+
+  z-index: -1;
 }
 
 .box:nth-child(2) {
@@ -246,7 +287,226 @@ nav {
 
   text-transform: capitalize;
 
-  padding: 0 0 20px 0;
+  padding: 10px 0 50px 0;
+
+  position: relative;
+}
+
+.box h1:after {
+  content: "";
+
+  position: absolute;
+
+  top: -30%;
+
+  left: 0;
+
+  width: 10%;
+
+  height: 100%;
+  border-bottom: 2px solid white;
+}
+
+/* vertex */
+
+.vertex .row,
+.elite .row {
+  align-items: center;
+}
+
+.vertex {
+  margin: 5rem auto;
+
+  padding: 10px;
+}
+
+.vertex-wrap {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.vertex-desc h1,
+.elite-desc h1 {
+  color: white;
+
+  position: relative;
+}
+
+.vertex-desc h1:after,
+.elite-desc h1:after {
+  content: "";
+
+  position: absolute;
+
+  top: 20%;
+
+  left: 0;
+
+  width: 10%;
+
+  height: 100%;
+  border-bottom: 2px solid white;
+}
+
+.vertex-desc p,
+.elite-desc p {
+  color: white;
+
+  padding: 20px 0 0 0;
+}
+
+.vertex-image {
+  width: 100%;
+
+  height: 300px;
+
+  margin: auto;
+
+  position: relative;
+}
+
+.vertex-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid #fff;
+}
+
+.vertex-image:after {
+  content: "";
+
+  position: absolute;
+
+  bottom: -1%;
+
+  right: 0;
+
+  width: 80%;
+
+  height: 80%;
+
+  background: #bda555;
+
+  z-index: -1;
+}
+
+/* elite */
+
+.elite {
+  margin: 5rem auto;
+
+  width: 100%;
+
+  background: #bda555;
+
+  padding: 10px;
+}
+
+.elite-image {
+  width: 100%;
+
+  height: 300px;
+
+  margin: auto;
+
+  position: relative;
+
+  z-index: 1;
+}
+
+.elite-image img {
+  object-fit: cover;
+
+  object-position: center;
+
+  width: 100%;
+
+  height: 100%;
+  border: 1px solid #fff;
+}
+
+.elite-image:after {
+  content: "";
+
+  position: absolute;
+
+  top: -1%;
+
+  left: 0;
+
+  width: 80%;
+
+  height: 80%;
+
+  background: #000;
+
+  z-index: -1;
+}
+
+.vertex-bg {
+  background: #bda555;
+}
+
+/* carousel */
+
+.carousel-item img {
+  width: 100px;
+  height: 100px;
+
+  border-radius: 50px;
+
+  object-fit: cover;
+
+  object-position: center;
+}
+
+.carousel-wrap {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.carousel-inner {
+  position: relative;
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+  width: 100%;
+
+  height: 60vh;
+
+  background: url(background.png) no-repeat;
+
+  background-position: center;
+
+  background-size: cover;
+}
+
+.carousel-inner:after {
+  content: "";
+
+  position: absolute;
+
+  width: 100%;
+
+  height: 100%;
+
+  top: 0;
+
+  left: 0;
+
+  background: rgba(0, 0, 0, 0.568);
 }
 
 /* responsiveness */
@@ -269,6 +529,10 @@ nav {
   .right {
     top: 33%;
   }
+
+  /* vetex */
+
+  /* elite */
 }
 
 @media screen and (min-width: 600px) {
@@ -293,7 +557,7 @@ nav {
 
     clip-path: polygon(0 0, 70% 0, 92% 100%, 0% 100%);
 
-    background: url(background.jpg) no-repeat;
+    background: url(background.png) no-repeat;
 
     background-position: center;
 
@@ -340,6 +604,22 @@ nav {
   }
 
   /* section hero ends  */
+
+  /* vetex */
+
+  .vertex {
+    width: 95%;
+  }
+
+  .vertex-image {
+    padding: 15px;
+  }
+
+  /* elite */
+
+  .elite-image {
+    padding: 15px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -438,5 +718,24 @@ nav {
     width: 350px;
 
     height: 350px;
+  }
+
+  .vertex {
+    width: 90%;
+  }
+
+  .vertex-image,
+  .elite-image {
+    width: 80%;
+
+    /* padding: 20px; */
+  }
+
+  .elite {
+    height: 50vh;
+
+    display: flex;
+
+    align-items: center;
   }
 }
