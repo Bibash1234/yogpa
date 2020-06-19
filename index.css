@@ -643,7 +643,16 @@ nav {
 }
 
 .footer-logo {
+  display: flex;
+
+  align-items: center;
+
+  flex-direction: column;
   max-width: 100px;
+}
+
+.footer-logo h3 {
+  color: rgba(255, 255, 255, 0.61);
 }
 
 .footer-list {
@@ -655,7 +664,7 @@ nav {
 .footer-list li {
   margin: 0 5px;
 
-  border-right: 1px solid white;
+  border-right: 1px solid rgba(255, 255, 255, 0.616);
 
   padding: 0 10px;
 }
@@ -669,7 +678,7 @@ nav {
 }
 
 .footer-desc p {
-  color: white;
+  color: rgba(255, 255, 255, 0.658);
 }
 /* responsiveness */
 
