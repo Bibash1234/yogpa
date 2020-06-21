@@ -680,6 +680,101 @@ nav {
 .footer-desc p {
   color: rgba(255, 255, 255, 0.658);
 }
+
+/* product page */
+
+/* jumbotron */
+
+.pricing {
+  background: #bda555;
+
+  padding: 20px 0;
+}
+
+.pricing1 {
+  padding: 40px 0;
+}
+
+.pricing h2,
+h4 {
+  color: white;
+
+  margin: 20px 0;
+}
+
+.pricing .row,
+.pricing1 .row {
+  margin: 3rem 0;
+}
+
+.pricing-table {
+  background: black;
+
+  margin: 20px;
+
+  /* padding: 10px 40px; */
+
+  box-shadow: 0 10px 6px black;
+}
+
+.pricing-table1 {
+  background: #191c21;
+
+  margin: 20px;
+
+  /* padding: 10px 40px; */
+
+  box-shadow: 0 10px 6px black;
+}
+
+.pricing-table h3,
+.pricing-table1 h3 {
+  color: white;
+  background: #191c21;
+  padding: 20px;
+}
+
+.pricing-table i,
+.pricing-table1 i {
+  padding: 0 20px 0 0;
+}
+
+.pricing-table ul,
+.pricing-table1 ul {
+  padding: 10px 20px;
+}
+
+.pricing-table li,
+.pricing-table1 li {
+  display: flex;
+
+  align-items: center;
+
+  color: white;
+
+  list-style-type: none;
+
+  font-size: 18px;
+
+  padding: 20px 0;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+
+  transition: transform 0.5s;
+
+  cursor: pointer;
+}
+
+.pricing-table li:last-child,
+.pricing-table1 li:last-child {
+  border: none;
+}
+
+.pricing-table li:hover,
+.pricing-table1 li:hover {
+  transform: scale(0.9);
+}
+
 /* responsiveness */
 
 @media screen and (max-width: 600px) {
