@@ -881,6 +881,44 @@ h4 {
   transform: scale(0.9);
 }
 
+.form-bg {
+  width: 80%;
+  margin: 8rem auto 0 auto;
+}
+
+.modal-body {
+  padding: 0 1rem !important;
+}
+
+.footer-box {
+  width: 100%;
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.footer-box a {
+  color: #bda555 !important;
+
+  text-decoration: underline !important;
+}
+
+.footer-box .btn {
+  background: #bda555;
+
+  color: white;
+
+  display: block;
+
+  width: 100%;
+
+  margin: 0 0 20px 0;
+}
+
 /* responsiveness */
 
 @media screen and (max-width: 600px) {
