@@ -882,7 +882,7 @@ h4 {
 }
 
 .form-bg {
-  width: 80%;
+  width: 100% !important;
   margin: 8rem auto 0 auto;
 }
 
@@ -917,6 +917,55 @@ h4 {
   width: 100%;
 
   margin: 0 0 20px 0;
+}
+
+/* sign up page */
+
+.sign-up {
+  margin: 0 0 5rem 0;
+}
+
+.sign-up-bg {
+  background: white;
+}
+
+.sign-up-bg h4 {
+  width: 100%;
+
+  padding: 1rem;
+  background: #bda555;
+}
+
+.sign-up .row {
+  padding: 1rem !important;
+}
+
+.hidden-box {
+  background: rgb(216, 216, 216);
+
+  border: none;
+
+  outline: none;
+
+  padding: 10px;
+
+  width: 100%;
+}
+
+.link {
+  padding: 10px 0;
+}
+
+.sign-up p a {
+  color: #bda555 !important;
+
+  text-decoration: underline !important;
+}
+
+.sign-up .btn {
+  background: #bda555 !important;
+
+  color: white;
 }
 
 /* responsiveness */
