@@ -921,7 +921,8 @@ h4 {
 
 /* sign up page */
 
-.sign-up {
+.sign-up,
+.sign-in {
   margin: 0 0 5rem 0;
 }
 
@@ -956,16 +957,121 @@ h4 {
   padding: 10px 0;
 }
 
-.sign-up p a {
+.sign-up p a,
+.sign-in p a {
   color: #bda555 !important;
 
   text-decoration: underline !important;
 }
 
-.sign-up .btn {
+.sign-up .btn,
+.sign-in .btn {
   background: #bda555 !important;
 
   color: white;
+}
+
+/* sign in */
+
+.side-box1 {
+  padding: 3rem;
+}
+
+.side-box1 h2 {
+  padding: 0 0 40px 0;
+
+  position: relative;
+}
+
+.side-box1 h2:before {
+  content: "";
+
+  position: absolute;
+
+  bottom: 26px;
+
+  left: 0;
+
+  width: 14%;
+
+  height: 100%;
+
+  border-bottom: 2px solid black;
+}
+
+.side-box1 p {
+  padding: 20px 0 0 0;
+
+  margin-bottom: 0 !important;
+}
+
+.side-bar1 {
+  background: url(image1.jpg) no-repeat;
+
+  background-position: center;
+
+  background-size: cover;
+
+  position: relative;
+}
+
+.side-bar1::before {
+  content: "";
+
+  position: absolute;
+
+  width: 100%;
+
+  height: 100%;
+
+  top: 0;
+
+  left: 0;
+
+  background: rgba(0, 0, 0, 0.39);
+}
+
+.form-desc {
+  width: 60%;
+
+  position: absolute;
+
+  top: 50%;
+
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  color: white;
+
+  z-index: 11;
+}
+
+.form-desc h3 {
+  position: relative;
+}
+
+.form-desc h3:before {
+  content: "";
+
+  position: absolute;
+
+  bottom: -5px;
+
+  left: 133px;
+
+  width: 20%;
+
+  height: 100%;
+
+  border-bottom: 2px solid white;
+}
+
+.form-desc p {
+  margin-bottom: 0 !important;
+
+  font-size: 15px;
+
+  padding: 10px 0;
 }
 
 /* responsiveness */
