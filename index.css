@@ -9,6 +9,7 @@
 }
 
 body {
+  margin: 8rem 0 0 0;
   background-color: black;
 }
 
@@ -121,6 +122,10 @@ nav {
 
   transform: scale(1);
 }
+
+/* .hero {
+  margin: 5.5rem 0 0 0;
+} */
 
 #wrap {
   width: 100%;
@@ -1081,7 +1086,7 @@ h4 {
 }
 
 .contact-bg {
-  background: url(contact.jpg) no-repeat;
+  background: url(contact.png) no-repeat;
 
   background-size: cover;
 
@@ -1162,7 +1167,7 @@ h4 {
 .contact-right {
   padding: 0 2rem;
 
-  background: url(office.jpg) no-repeat;
+  background: url(office.png) no-repeat;
 
   background-position: center;
 
@@ -1226,13 +1231,9 @@ h4 {
   object-position: center;
 }
 
-.about-desc:nth-child(even) {
+.about-desc {
   padding: 2rem;
-  /* background: #191c21; */
-}
-
-.about-desc:nth-child(odd) {
-  padding-left: 0 !important;
+  background: #191c21;
 }
 
 .about-desc h1 {
