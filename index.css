@@ -1207,6 +1207,71 @@ h4 {
   padding: 1rem 0;
 }
 
+/* about page */
+
+.about .row {
+  margin: 4rem 0;
+}
+
+.about-image {
+  padding: 0 0 !important;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: center;
+}
+
+.about-desc:nth-child(even) {
+  padding: 2rem;
+  /* background: #191c21; */
+}
+
+.about-desc:nth-child(odd) {
+  padding-left: 0 !important;
+}
+
+.about-desc h1 {
+  color: white;
+
+  position: relative;
+}
+
+.about-desc h1:after {
+  content: "";
+
+  position: absolute;
+
+  top: 20%;
+
+  left: 0;
+
+  width: 10%;
+
+  height: 100%;
+  border-bottom: 2px solid white;
+}
+
+.about-desc p {
+  color: white;
+
+  padding: 20px 0 0 0;
+
+  line-height: 1.6;
+}
+
+.about-us .btn {
+  background-color: #bda555 !important;
+}
+
+.about-us .btn a {
+  text-decoration: none;
+}
+
 /* responsiveness */
 
 @media screen and (max-width: 600px) {
