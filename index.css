@@ -1273,6 +1273,86 @@ h4 {
   text-decoration: none;
 }
 
+.sign-up-right {
+  padding: 0 2rem;
+
+  background: url(office.png) no-repeat;
+
+  background-position: center;
+
+  background-size: cover;
+
+  position: relative;
+}
+
+.sign-up-right::before {
+  content: "";
+
+  position: absolute;
+
+  width: 100%;
+
+  height: 100%;
+
+  top: 0;
+
+  left: 0;
+
+  background: rgba(0, 0, 0, 0.849);
+}
+
+.sign-up-detail {
+  color: white;
+  position: absolute;
+
+  top: 10%;
+
+  left: 10%;
+
+  transform: translate(-6%, -11%);
+
+  z-index: 111;
+}
+
+.sign-up-detail h4 {
+  position: relative;
+}
+
+.sign-up-detail h4::before {
+  content: "";
+
+  position: absolute;
+
+  bottom: -10%;
+
+  left: 0;
+
+  border-bottom: 2px solid white;
+
+  width: 10%;
+
+  height: 100%;
+}
+
+.sign-up-detail video {
+  cursor: pointer;
+
+  outline: none;
+
+  padding: 0 0 20px 0;
+}
+
+.side-bar {
+  background: white;
+
+  padding: 1.5rem 1rem;
+}
+
+.sign-up .col-md-7 {
+  padding-right: 0 !important;
+
+  padding-left: 0 !important;
+}
 /* responsiveness */
 
 @media screen and (max-width: 600px) {
