@@ -651,6 +651,14 @@ nav {
   padding: 40px 0;
 }
 
+.footer-wrap p {
+  color: white;
+
+  margin: 10px 0 0 0;
+
+  letter-spacing: 1px;
+}
+
 .footer-logo {
   display: flex;
 
@@ -667,7 +675,7 @@ nav {
 .footer-list {
   display: flex;
 
-  margin: 40px 0;
+  margin: 40px 0 10px 0;
 }
 
 .footer-list li {
@@ -1302,6 +1310,132 @@ h4 {
   text-decoration: none;
 }
 
+/* how it works  */
+
+.timeline {
+  position: relative;
+
+  margin: 40px 0;
+}
+
+.timeline::before {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+
+  top: 0;
+
+  width: 2px;
+
+  height: 100%;
+
+  background: white;
+}
+
+.content {
+  background: #191c21;
+
+  padding: 20px;
+
+  box-shadow: 6px 6px 10px rgba(255, 255, 255, 0.13);
+}
+
+.timeline li {
+  list-style-type: none;
+
+  position: relative;
+
+  padding: 20px 40px;
+
+  width: 50%;
+
+  color: white;
+}
+
+.timeline li:nth-child(odd) {
+  margin: 5rem 0;
+  float: left;
+  clear: both;
+}
+
+.timeline li:nth-child(even) {
+  float: right;
+
+  clear: both;
+}
+
+.timeline li:nth-child(odd):before {
+  content: "";
+
+  position: absolute;
+
+  top: 24px;
+
+  right: -11px;
+
+  width: 20px;
+
+  height: 20px;
+
+  border-radius: 20px;
+
+  background: #bda555;
+}
+
+.timeline li:nth-child(even):before {
+  content: "";
+
+  position: absolute;
+
+  top: 24px;
+
+  left: -9px;
+
+  width: 20px;
+
+  height: 20px;
+
+  border-radius: 20px;
+
+  background: #bda555;
+}
+
+.timeline li:nth-child(odd) .timeline-img {
+  position: absolute;
+
+  top: 20px;
+
+  right: -80%;
+}
+
+.timeline li:nth-child(even) .timeline-img {
+  position: absolute;
+
+  top: 20px;
+
+  left: -80%;
+}
+
+.timeline-img {
+  height: 250px;
+
+  position: relative;
+  /* 
+  width: 100%; */
+}
+
+.timeline-img img {
+  /* width: 100%; */
+
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: center;
+}
+
 /* responsiveness */
 
 @media screen and (max-width: 600px) {
@@ -1392,10 +1526,6 @@ h4 {
 
   .text-box h1 {
     font-size: 2rem;
-
-    border-left: 4px solid white;
-
-    padding: 0 0 0 10px;
   }
 
   .right {
@@ -1478,12 +1608,12 @@ h4 {
     border-radius: 5px;
   }
 
+  .text-box {
+    left: 70px;
+  }
+
   .text-box h1 {
     font-size: 3rem;
-
-    border-left: 4px solid white;
-
-    padding: 0 0 0 10px;
   }
 
   .text-box .hero-btn {
@@ -1501,15 +1631,11 @@ h4 {
 
 @media screen and (min-width: 1400px) {
   .text-box {
-    left: 8%;
+    left: 22%;
   }
 
   .text-box h1 {
-    font-size: 3rem;
-
-    border-left: 4px solid white;
-
-    padding: 0 0 0 10px;
+    font-size: 3.5rem;
   }
 
   .text-box .hero-btn {
@@ -1517,7 +1643,7 @@ h4 {
   }
 
   .left::before {
-    left: -20%;
+    left: -15%;
 
     width: 350px;
 
